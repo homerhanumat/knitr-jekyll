@@ -1,12 +1,15 @@
 ---
 layout: post
 title:  "A Test Post"
-date: 2015-11-16 21:49:31
+date: 2015-11-17 17:39:32
 published: true
 tags: [testing]
+output:
+  html_document:
+    mathjax:  default
 ---
 
-This is an R Markdown document. Hello.  Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is an R Markdown document. Hello. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
@@ -32,3 +35,11 @@ You can also embed plots, for example:
 ![plot of chunk unnamed-chunk-2](/knitr-jekyll/figure/source/2015-11-16-a-test-post/unnamed-chunk-2-1.png) 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+How about some math?
+
+$$
+\vec{u} \cdot \vec{v}
+$$
+
+is a dot product.  How about inline?  $$ \vec{u} \cdot \vec{v} $$.  That works.  Not as the kramdown documentation says.
