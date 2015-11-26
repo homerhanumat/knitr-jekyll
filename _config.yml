@@ -10,6 +10,7 @@ url: "https://homerhanumat.github.io" # the base hostname & protocol for your si
 twitter_username: homerhanumat
 github_username:  homerhanumat
 permalink: /:year/:month/:title.html
+author:  Homer White
 
 # Build settings
 markdown: kramdown
