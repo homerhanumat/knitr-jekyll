@@ -3,7 +3,7 @@ layout: post
 title: "A Tutorial on Writing Simulation Apps in Shiny"
 date: 2015-07-03 19:00:00
 published: true
-tags: [R]
+categories: [R]
 output:
   html_document:
     mathjax:  default
