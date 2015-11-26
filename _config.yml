@@ -2,7 +2,9 @@
 title: A Statistics Blog
 email: homerhanumat SPAM_BLOCKgmaildotcom
 description: > # this means to ignore newlines until "baseurl:"
-  This is an awesome blog.
+  A blog devoted mostly to the the teaching of undergraduate-level statstics
+  and data anlysis with R, along with occasional technical notes on R-related
+  tools.
 baseurl: "/knitr-jekyll/" # the subpath of your site, e.g. /blog/
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
 twitter_username: homerhanumat
@@ -11,3 +13,11 @@ permalink: /:year/:month/:title.html
 
 # Build settings
 markdown: kramdown
+
+category_dir: blog/categories
+
+markdown: kramdown
+
+paginate: 4          # Posts per page on the blog index
+pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+recent_posts: 5       # Posts in the sidebar Recent Posts section
