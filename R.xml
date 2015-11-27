@@ -17,6 +17,8 @@ layout: nil
   </author>
   <generator uri="https://jekyllrb.com/">Jekyll</generator>
 
+  {{ site.categories.R.size }}
+
   {% for post in site.categories.R limit: 20 %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
