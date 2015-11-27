@@ -4,7 +4,7 @@ title: Categories
 permalink: /categories/
 ---
 
-<!-- thanks to Houssain Mohd Faysel, https://stackoverflow.com/questions/20945944/jekyll-liquid-output-category-list-with-post-count/21080786#21080786 -->
+<!-- thanks to Houssain Mohd Faysel, https://stackoverflow.com/questions/20945944/jekyll-liquid-output-category-list-with-post-count/21080786#21080786 .  Adapted slightly.-->
 
 <ul class="tag-box inline">
 {% assign tags_list = site.categories %}  
@@ -13,13 +13,21 @@ permalink: /categories/
       <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
     {% endfor %}
   {% else %}
-    {% for tag in tags_list %} 
-      <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }} <span>{{ tag[1].size }}</span></a></li>
+    {% for tag in tags_list %}
+    {% assign post_number = tag[1].size %}
+      <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}: <span>{{ post_number }} </span><span>
+      {% if post_number > 1 %}
+        {{ 'posts' }}
+      {% else %}
+        {{ 'post' }}
+      {% endif %}
+      </span></a></li>
     {% endfor %}
   {% endif %}
-{% assign tags_list = nil %}
+  {% assign tags_list = nil %}
+  
+  
 </ul>
-
 {% for tag in site.categories %} 
   <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
   <ul class="post-list">
