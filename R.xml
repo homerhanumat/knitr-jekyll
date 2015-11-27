@@ -18,15 +18,13 @@ layout: null
   </author>
   <generator uri="https://jekyllrb.com/">Jekyll</generator>
 
-  {{ 'hello' }}
-
   {% for post in site.categories.R limit: 20 %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
     <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-    <content type="html">{{ post.content | expand_urls: site.url | xml_escape }}</content>
+    <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
 </feed>
