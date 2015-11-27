@@ -6,7 +6,6 @@ permalink: /categories/
 
 <!-- thanks to Houssain Mohd Faysel, https://stackoverflow.com/questions/20945944/jekyll-liquid-output-category-list-with-post-count/21080786#21080786 .  Adapted slightly.-->
 
-
 <ul class="tag-box inline">
 {% assign tags_list = site.categories %}  
   {% if tags_list.first[0] == null %}
