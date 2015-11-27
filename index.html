@@ -3,20 +3,30 @@ layout: default
 ---
 
 <div class="home">
+{% for post in site.posts %}
+  {% if forloop.index <= site.post_limit %}
+  <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="post-header">
+    <a href="{{ site.url }}{{site.baseurl}}{{ post.url }}">
+      <h1 class="post-title">{{ post.title }}</h1>
+    </a>
+    <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <article class="post-content">
+    {{ post.content }}
+  </article>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</div>
+
+<hr>
+<br><br>
+
+{% else %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
