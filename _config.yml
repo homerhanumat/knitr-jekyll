@@ -7,7 +7,6 @@ description: > # this means to ignore newlines until "baseurl:"
   tools.
 baseurl: "/knitr-jekyll/" # the subpath of your site, e.g. /blog/
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
-twitter_username: homerhanumat
 github_username:  homerhanumat
 permalink: /:year/:month/:title.html
 author:  Homer White
