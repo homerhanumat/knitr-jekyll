@@ -29,13 +29,13 @@ A quick look at the documentation showed that it's very easy indeed to do this s
 
 Suppose, for example, that you want to illustrate to students the risks associated with extrapolation.  You begin by reminding them of the experience they had back in high school with their graphing calculators, when they zoomed in on a curve:  zoom in close enough, and it looks like a straight line.
 
-Then you point out that for the most part we live our lives from a "zoomed-in" perspective, at least where data is concerned.  In situations where we are interested in a pair of numerical measurements on individuals, we usually possess $y$-values for only a fairly narrow range of $x$-values.  Hence it is likely that a scatter plot we make from our "zoomed-in" data will show a roughly linear relationship, even though on a global scale the "real" relationship probably is some kind of a curve.
+Then you point out that for the most part we live our lives from a "zoomed-in" perspective, at least where data is concerned.  In situations where we are interested in a pair of numerical measurements on individuals, we usually possess $$ y $$-values for only a fairly narrow range of $$ x $$-values.  Hence it is likely that a scatter plot we make from our "zoomed-in" data will show a roughly linear relationship, even though on a global scale the "real" relationship probably is some kind of a curve.
 
 The app below (a slight modification of the example in Gesmann's post) makes the point in a flash.  Click and drag to establish a zoom region, right-click to reset:
 
 
 <!-- ScatterChart generated in R 3.2.2 by googleVis 0.5.10 package -->
-<!-- Wed Nov 25 21:03:53 2015 -->
+<!-- Fri Nov 27 00:28:21 2015 -->
 
 
 <!-- jsHeader -->
@@ -964,6 +964,6 @@ print(gvScat,'chart')
 {% endhighlight %}
 
 
-The same approach works in any R Markdown document (including the source document for this Octopress-powered post).  I will certainly take a closer look at `googleVis`:  thanks, Markus!
+The same approach works in any R Markdown document (including the source document for this Jekyll-powered post).  I will certainly take a closer look at `googleVis`:  thanks, Markus!
 
 

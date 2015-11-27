@@ -146,7 +146,7 @@ Sometimes you want to have an app on hand, not because it addresses a major cour
 * to provide a "linear summary"" of the scatter plot;
 * to provide linear predictions, based on the scatter plot, of y-values from x-values.
 
-The so-called "SD line"---the line that runs through the point of averages and whose slope is the ratio of the standard deviation of the y-value to the standard deviation of the x-value---is well-suited to the former task, whereas the regression line is, of course, the right choice for the latter one.  When many students first look at a scatter plot, they see an SD line in their mind's eye; when they get around to producing the regression line, it can look like a misfire.
+The so-called "SD line"---the line that runs through the point of averages and whose slope is the ratio of the standard deviation of the $$ y $$-value to the standard deviation of the $$ x $$-value---is well-suited to the former task, whereas the regression line is, of course, the right choice for the latter one.  When many students first look at a scatter plot, they see an SD line in their mind's eye; when they get around to producing the regression line, it can look like a misfire.
 
 The following app helps clear things up for students.  It is based on a discussion on the "shallow regression line" issue in [*Statistics*](http://books.wwnorton.com/books/Statistics/), the classic text by Freeman, Pisani and Purves.
 
@@ -166,7 +166,7 @@ runApp(system.file("FindRegLine",package="tigerstats"))
 
 You have the option to keep score.  Your score is the sum of the number of times you have submitted a guess and the following "closeness measure":
 
-$$100 \times \frac{\textbf{Your Line's Error-SS}-\textbf{Residual-SS}}{\textbf{Total-SS}-\textbf{Residual-SS}}.$$
+$$ 100 \times \frac{\textbf{Your Line's Error-SS}-\textbf{Residual-SS}}{\textbf{Total-SS}-\textbf{Residual-SS}}. $$
 
 
 ## Shiny vs. `manipulate`
